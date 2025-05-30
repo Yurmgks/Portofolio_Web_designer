@@ -304,6 +304,7 @@ body {
     max-width: 600px;
     margin: 80px;
     padding: 20px;
+    margin-left: 265px;
 }
 
 .contact-form input,
@@ -335,7 +336,7 @@ body {
 
 /* pesan list */
 .message-list {
-    max-width: 1800px;
+    max-width: 10000px;
     max-height: 350px; /* Ubah sesuai kebutuhan */
     overflow-y: auto;  /* Scroll vertikal */
     background-color: #fff;
@@ -345,7 +346,7 @@ body {
     float: right;
     clear: none;
     margin-top: -490px;
-    margin-right: 80px;
+    margin-right: 320px;
 }
 
 
