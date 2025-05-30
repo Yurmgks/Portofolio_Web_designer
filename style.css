@@ -1,0 +1,365 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Codingan */
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.awal-atas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    height: 70px;
+    background-color: #2D2D2D;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1 40px; /* Lebarkan padding kiri-kanan agar tidak terlalu mepet */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.awal-atas .judul {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.awal-atas ul {
+    display: flex;
+    justify-content: flex-end; /* Memindahkan menu ke kanan */
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.awal-atas ul li {
+    display: inline-block;
+    margin-top: 1; /* Atau kecilkan nilainya */
+    margin-right: 10px;
+}
+
+.awal-atas ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 5px;
+}
+
+.awal-atas a:hover {
+    color: #6977BE;
+    transition: 0.3s ease-in-out;
+}
+
+.heros{
+    margin-top: 70px;
+    height: auto;
+    background-image: url(gambar/Rectangle\ 39.png);
+    background-size: cover;
+    background-position: 0 0 center;
+    padding: 450px;
+}
+
+.heros-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-90%, -50%);
+    text-align: justify;
+}
+
+.heros-text h1 {
+    font-size: 50px;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+}
+
+.heros-text h2 {
+    font-size: 45px;
+    color: #FFFFFF;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.heros-text p{
+    font-size: 30px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    line-height: 0.8;
+    white-space: pre-line;
+}
+
+.heros-inline {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    flex-direction: row; 
+    text-align: end;
+    height: 100%;
+    gap: 1px; /* Jarak antara h1 dan h2 */
+}
+
+.heros-profesi {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    text-align: end;
+    height: 100%;
+    gap: 9px;
+    margin-top: 10px;
+    margin-bottom: 20px; 
+}
+
+.heros-profesi h1 {
+    font-size: 48px;
+    color: #fff;
+    margin: 0;
+    font-weight: 600;
+}
+
+.heros-inline h1,
+.heros-inline h2 {
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+
+/* banner */
+.banner {
+            background-color: #6977BE;
+            color: white;
+            padding: 20px 0;
+            overflow: hidden;
+            white-space: nowrap;
+            margin: 0px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+        }
+
+.banner-content {
+            display: inline-block;
+            animation: scroll 20s linear infinite;
+        }
+
+@keyframes scroll {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+/* hero 2 */
+.heros2{
+    position: relative;
+    height: auto;
+    background-image: url(gambar/Rectangle\ 32.png);
+    background-size: cover;
+    background-position: center;
+    padding: 450px 40px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.heros-image {
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    transform: translate(-50%, 10%);
+    width: 490px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.heros-image img {
+    width: 99%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.heros-text2{
+    position: absolute;
+    text-align:center;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+}
+
+.heros-text2 h1 {
+    margin: 0;
+    font-size: 47px;
+    color: #f4f4f4;
+    font-weight: bold;
+}
+
+.heros-inline2 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+    gap: 24px;
+    margin-top: 30px;
+}
+
+.heros-inline2 h2{
+    margin: 0;
+    margin-bottom: 8px;
+    font-size: 30px;
+    color: #f4f4f4;
+    font-weight: 400;
+}
+
+.heros3{
+    height: auto;
+    background-image: url(gambar/Rectangle\ 33.png);
+    background-size: cover;
+    background-position: 0 0 center;
+    padding: 420px;
+}
+
+.heros4{
+    height: auto;
+    background-image: url(gambar/Rectangle\ 34.png);
+    background-size: cover;
+    background-position: 0 0 center;
+    padding: 130px 40px;
+}
+
+/* kontak */
+
+.heros4 h2{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #f4f4f4;
+    text-transform: uppercase;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 600px;
+    margin: 80px;
+    padding: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    height: 150px;
+    resize: vertical; 
+}
+
+.contact-form button{
+    padding: 15px;
+    margin: 40 auto;
+    background-color: #6977BE;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.contact-form button:hover{
+    background-color: #5b6b9a;
+}
+
+/* pesan list */
+.message-list {
+    max-width: 1800px;
+    max-height: 350px; /* Ubah sesuai kebutuhan */
+    overflow-y: auto;  /* Scroll vertikal */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    float: right;
+    clear: none;
+    margin-top: -450px;
+    margin-right: 80px;
+}
+
+
+/* clearFix */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
