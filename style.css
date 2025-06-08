@@ -208,75 +208,273 @@ body {
         }
 
 /* hero 2 */
-.heros2{
+/* IMPROVED HERO2 SECTION */
+.heros2 {
     position: relative;
-    height: auto;
+    padding: 120px 40px;
     background-image: url(gambar/Rectangle\ 32.png);
     background-size: cover;
     background-position: center;
-    padding: 450px 40px;
+    min-height: 70vh;
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
+    justify-content: center;
+    /* overflow: hidden; Prevent image overflow */
+}
+
+/* IMAGE STYLING */
+.heros-image, 
+.heros-image2 {
+    position: absolute;
+    width: 280px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    object-fit: cover;
+    z-index: 1;
 }
 
 .heros-image {
-    position: absolute;
-    top: 15%;
-    left: 20%;
-    transform: translate(-50%, 10%);
-    width: 490px;
-    height: auto;
-    margin-right: 20px;
+    left: 9.5%;
+    top: 30%;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
 }
 
-.heros-image img {
-    width: 99%;
-    height: auto;
-    border-radius: 10px;
+.heros-image:hover {
+    transform: scale(1.5); /* Adjust the scale factor as needed */
 }
 
-.heros-text2{
-    position: absolute;
-    text-align:center;
-    top: 8%;
-    left: 50%;
-    transform: translate(-50%, 0);
-    text-align: center;
+.heros-image2 {
+    right: 8%;
+    bottom: 20%;
+    transform: rotate(-8deg);
+}
+
+/* TEXT CONTENT */
+.heros-text2 {
+    width: 90%;
+    max-width: 900px;
+    position: relative;
+    z-index: 2;
+    padding: 50px 0;
 }
 
 .heros-text2 h1 {
-    margin: 0;
-    font-size: 47px;
-    color: #f4f4f4;
-    font-weight: bold;
-}
-
-.heros-inline2 {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: column;
+    font-size: 5.3rem;
+    color: #fff;
     text-align: center;
-    height: 100%;
-    gap: 24px;
-    margin-top: 30px;
+    margin-bottom: 10rem;
+    margin-top: -0.5rem;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
 }
 
-.heros-inline2 h2{
-    margin: 0;
-    margin-bottom: 8px;
-    font-size: 30px;
+/* TWO-COLUMN LAYOUT */
+.heros-inline2 {
+    background: rgba(45, 45, 45, 0.85);
+    padding: 50px;
+    border-radius: 15px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 10px 25px rgba(128, 128, 128, 0.2);
+}
+
+.heros-inline2 h2 {
+    flex: 1;
+    min-width: 350px;
+    background: rgba(45, 45, 45, 0.85);
+    padding: 30px;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    line-height: 2.0;
     color: #f4f4f4;
-    font-weight: 400;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    margin-bottom: -2rem;
+    transition: transform 0.3s ease;
+}
+
+.heros-inline2 h2:hover {
+    transform: translateY(-10px);
 }
 
 .heros3{
+    position: relative;
+    min-height: 70vh;
     height: auto;
+    display: flex;
     background-image: url(gambar/Rectangle\ 33.png);
     background-size: cover;
-    background-position: 0 0 center;
-    padding: 420px;
+    background-position: center;
+    padding: 120px 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.heros-text3 {
+    width: 90%;
+    max-width: 900px;
+    position: relative;
+    z-index: 2;
+    padding: 50px 0;
+    
+}
+
+.heros-text3 h1 {
+    font-size: 5.3rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10rem;
+    margin-top: -0.5rem;
+    margin-top: -40px;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+}
+
+.pilihan {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* overflow: auto; */
+}
+
+.edu {
+    width: 48%;
+    height: 20rem;
+    background: #5b6b9a;
+    border: 10px;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 5px;
+    order: 1;
+    margin-left: -50px;
+    margin-top: -65px;
+}
+
+.edu h2{
+    color: #fff;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.edu h3{
+    color: #fff;
+    
+}
+
+.edu p{
+    color: #dbdada;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.edukasi h3{
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.skil-u {
+    width: 48%;
+    height: 20rem;
+    background: #5b6b9a;
+    border: 10px;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 5px;
+    margin-right: -90px;
+    margin-top: -65px;
+    order: 2;
+}
+
+.skil-u h2{
+    color: #fff;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.skill h3{
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+
+.skill li {
+    background-repeat: no-repeat;
+    background-position: 0 5px;
+    background-size: 20px 20px; /* Adjust width and height as needed */
+    padding-left: 25px;
+}
+
+.skill li.cdr{
+    background-image: url("gambar/cdr.png");
+    width: 50px;
+    height: 50px;
+}
+
+.skill li.ps{
+    background-image: url("gambar/ps.png");
+    width: 50px;
+    height: 50px;
+}
+
+.skill li.ai{
+    background-image: url("gambar/ai.png");
+    width: 50px;
+    height: 50px;
+}
+
+.skill li.can{
+    background-image: url("gambar/can.png");
+    width: 50px;
+    height: 50px;
+}
+
+.skill li.fig{
+    background-image: url("gambar/fig.png");
+    width: 50px;
+    height: 50px;
+}
+
+.skill li.ht{
+    background-image: url("gambar/html.png");
+    width: 50px;
+    height: 50px;
+}
+
+.skill li.cs{
+    background-image: url("gambar/css.png");
+    width: 50px;
+    height: 50px;
+}
+
+.skill li.js{
+    background-image: url("gambar/js.png");
+    width: 50px;
+    height: 50px;
+}
+
+.skill li.cp{
+    background-image: url("gambar/cpp.png");
+    width: 50px;
+    height: 50px;
+}
+
+.skill li.tp{
+    background-image: url("gambar/ts.png");
+    width: 50px;
+    height: 50px;
 }
 
 .heros4{
@@ -336,8 +534,9 @@ body {
 
 /* pesan list */
 .message-list {
-    max-width: 10000px;
-    max-height: 350px; /* Ubah sesuai kebutuhan */
+    width: 450px;
+    max-width: 100rem;
+    max-height: 378px; /* Ubah sesuai kebutuhan */
     overflow-y: auto;  /* Scroll vertikal */
     background-color: #fff;
     padding: 20px;
@@ -345,10 +544,25 @@ body {
     box-shadow: 0 3px 10px rgba(0,0,0,0.1);
     float: right;
     clear: none;
-    margin-top: -490px;
-    margin-right: 320px;
+    margin-top: -473px;
+    margin-right: 350px;
+    /* margin-left: 120px; */
+    box-sizing: border-box;
 }
 
+.message-list h3{
+    font-weight: 800;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding: 0;
+    display: block;
+}
+
+.no-message{
+    margin-bottom: 20px;
+} 
 
 /* clearFix */
 .cf:before,
