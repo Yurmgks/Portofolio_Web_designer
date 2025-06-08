@@ -406,75 +406,70 @@ body {
     text-align: center;
     font-size: 26px;
     font-weight: 600;
-    margin-bottom: 2px;
-    margin-top: 2px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.skill ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
 }
 
 .skill li {
+    width: 64px;
+    height: 64px;
     background-repeat: no-repeat;
-    background-position: 0 5px;
-    background-size: 20px 20px; /* Adjust width and height as needed */
-    padding-left: 25px;
+    background-position: center;
+    background-size: contain;
+    text-indent: -9999px; /* Hide text */
+    overflow: hidden;
+    display: block;
+    margin: 5px;
 }
 
-.skill li.cdr{
+.skill li.cdr {
     background-image: url("gambar/cdr.png");
-    width: 50px;
-    height: 50px;
 }
 
-.skill li.ps{
+.skill li.ps {
     background-image: url("gambar/ps.png");
-    width: 50px;
-    height: 50px;
 }
 
-.skill li.ai{
+.skill li.ai {
     background-image: url("gambar/ai.png");
-    width: 50px;
-    height: 50px;
 }
 
-.skill li.can{
+.skill li.can {
     background-image: url("gambar/can.png");
-    width: 50px;
-    height: 50px;
 }
 
-.skill li.fig{
+.skill li.fig {
     background-image: url("gambar/fig.png");
-    width: 50px;
-    height: 50px;
 }
 
-.skill li.ht{
+.skill li.ht {
     background-image: url("gambar/html.png");
-    width: 50px;
-    height: 50px;
 }
 
-.skill li.cs{
+.skill li.cs {
     background-image: url("gambar/css.png");
-    width: 50px;
-    height: 50px;
 }
 
-.skill li.js{
+.skill li.js {
     background-image: url("gambar/js.png");
-    width: 50px;
-    height: 50px;
 }
 
-.skill li.cp{
+.skill li.cp {
     background-image: url("gambar/cpp.png");
-    width: 50px;
-    height: 50px;
 }
 
-.skill li.tp{
+.skill li.tp {
     background-image: url("gambar/ts.png");
-    width: 50px;
-    height: 50px;
 }
 
 .heros4{
